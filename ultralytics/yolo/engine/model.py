@@ -232,6 +232,7 @@ class YOLO:
         Returns:
             (List[ultralytics.yolo.engine.results.Results]): The prediction results.
         """
+
         if source is None:
             source = ROOT / 'assets' if is_git_dir() else 'https://ultralytics.com/images/bus.jpg'
             LOGGER.warning(f"WARNING ⚠️ 'source' is missing. Using 'source={source}'.")
